@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: rgba(20, 76, 144, 0.801);
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #03062a;
+        }
+        .navbar {
+            background-color: white;
+        }
+        .navbar-brand img {
+            max-height: 70px;
+        }
+        .navbar-nav .nav-link {
+            color: #000000;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="logoo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Form -->
+    <div class="container">
+        
+        <h2>Vehicle Details Form</h2>
+        <form id="vehicleForm">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="typeOfCase">Type of Case:</label>
+                    <select id="typeOfCase" name="typeOfCase" class="form-control" required>
+                        <option value="">Select Type of Case</option>
+                        <option value="Used">Used</option>
+                        <option value="Repofunding">Repofunding</option>
+                        <option value="Name Transfer">Name Transfer</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="productType">Product Type:</label>
+                    <select id="productType" name="productType" class="form-control" required>
+                        <option value="">Select Product Type</option>
+                        <option value="PV">E-Scooter</option>
+                        <option value="E-rickshaw">E-Rickshaw</option>
+                        <option value="cv">E-Auto</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="usageType">Usage Type:</label>
+                    <select id="usageType" name="usageType" class="form-control" required>
+                        <option value="">Select Usage Type</option>
+                        <option value="Goods">Goods</option>
+                        <option value="Passenger">Passenger</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Commercial">Commercial</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="manufacturer">Manufacturer:</label>
+                    <input type="text" class="form-control" id="manufacturer" name="manufacturer" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="make">Make:</label>
+                    <input type="text" class="form-control" id="make" name="make" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="variant">Variant:</label>
+                    <input type="text" class="form-control" id="variant" name="variant" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="yearOfManufacture">Year of Manufacture:</label>
+                    <input type="text" class="form-control" id="yearOfManufacture" name="yearOfManufacture" required>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="col-md-4">New Asset Details</h4>
+               
+                <div class="form-group col-md-12">
+                    <label for="exRoomPrice">Ex-room Price:</label>
+                    <input type="text" class="form-control" id="exRoomPrice" name="exRoomPrice" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="onRoadPrice">On Road Price:</label>
+                    <input type="text" class="form-control" id="onRoadPrice" name="onRoadPrice" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="gst">GST:</label>
+                    <input type="text" class="form-control" id="gst" name="gst" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="rtoCharge">RTO Charge:</label>
+                    <input type="text" class="form-control" id="rtoCharge" name="rtoCharge" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="netCost">Net Cost:</label>
+                    <input type="text" class="form-control" id="netCost" name="netCost" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary"><b>Submit</b></button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        async function handlesaveinfo(event) {
+            event.preventDefault();
+            console.log("function has called");
+                console.log("function has called");
+                   
+                const formDatac = {
+        typeOfCase: document.getElementById('typeOfCase').value,
+        productType: document.getElementById('productType').value,
+        usageType: document.getElementById('usageType').value,
+        manufacturer: document.getElementById('manufacturer').value,
+        make: document.getElementById('make').value,
+        variant: document.getElementById('variant').value,
+        yearOfManufacture: document.getElementById('yearOfManufacture').value,
+        exRoomPrice: document.getElementById('exRoomPrice').value,
+        onRoadPrice: document.getElementById('onRoadPrice').value,
+        gst: document.getElementById('gst').value,
+        rtoCharge: document.getElementById('rtoCharge').value,
+        netCost: document.getElementById('netCost').value,
+        applicantDetails1: {} 
+    };
+    
+    
+                    
+                   try {
+    
+                    const latestResponse = await fetch('http://localhost:8080/api/latest');
+        if (!latestResponse.ok) {
+            throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+        }
+    
+        const latestData = await latestResponse.json();
+        const id_applicant = latestData.id_applicant;
+    
+        // Update applicantDetails1 with the fetched id_applicant
+        formDatac.applicantDetails1 = { id_applicant };
+                       const response = await fetch('http://localhost:8080/api/vehicle',{
+                           method: 'POST',
+                           headers: {
+                               'Content-Type': 'application/json'
+                           },
+                           body: JSON.stringify(formDatac)
+                       });
+                       if (response.ok) {
+                           alert('Data saved successfully');
+                           const nextPageUrl = "./finance.html";
+                           window.location.href = nextPageUrl;
+                       
+                       } else {
+                           alert('Failed to save data: ' + response.statusText);
+                       }
+                   } catch (error) {
+                       alert('An error occurred: ' + error.message);
+                   }
+               }
+        document.getElementById('vehicleForm').addEventListener('submit', handlesaveinfo);
+    </script>
+</body>
+</html>

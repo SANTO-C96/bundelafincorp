@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Applicant Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background-color: white;
+        }
+        .navbar-brand img {
+            max-height: 70px;
+        }
+        .navbar-nav .nav-link {
+            color: #000000;
+        }
+        </style>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="logoo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <!-- GUARANTOR DETAILS -->
+<div class="container mt-5">
+    <h2 class="mb-6"><b>Guarantor Details</b></h2>
+        <form id="gurantordetails">
+            <div class="row">
+                <!-- Personal Information -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="Name"> Full Name:</label>
+                        <input type="text" class="form-control" id="Nameg" name="Name">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="FatherName" >Father/Spouse Name:</label>
+                        <input type="text" class="form-control" id="Fatherg" name="FatherName">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="Mother" >Mother's Name:</label>
+                        <input type="text" class="form-control" id="motherg" name="Mother">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="Mobile">Mobile Number:</label>
+                        <input type="text" class="form-control" id="mobg" name="Mobile">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="DateOfBirth" >Date of Birth:</label>
+                        <input type="date" class="form-control" id="dobg" name="DateOfBirth">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="Age">Age:</label>
+                        <input type="Age" class="form-control" id="ageg" name="Age">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Gender" >Gender:</label>
+                        <select id="Genderg" class="form-control" name="Gender">
+                            <option value="Select">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="MaritalStatus" >Marital Status:</label>
+                        <select id="MaritalStatusg" id="MaritalStatusg" class="form-control" name="MaritalStatus">
+                            <option value="Select">Select</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+         
+
+          
+
+           
+
+            <!-- Permanent Address Section -->
+            <h3>Permanent Address</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="Addresstype">Address Type:</label>
+                        <select id="Addresstypeg" class="form-control" name="Addresstype">
+                            <option value="Select">Select</option>
+                            <option value="Business">Business</option>
+                            <option value="Residence">Residence</option>
+                            <option value="Owned">Owned</option>
+                            <option value="Rented">Rented</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="permanentAddress" >Address:</label>
+                        <input type="text" class="form-control" id="permanentAddressg" name="permanentAddress">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="CurrentAddress_locality">Locality:</label>
+                        <input type="text" class="form-control" id="localityg" name="locality">
+                    </div>
+                </div>
+                
+               
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="Landmark ">Landmark:</label>
+                        <input type="text" class="form-control" id="Landmarkg" name="Landmark">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="City">City:</label>
+                        <input type="text" class="form-control" id="cityg" name="City">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="CurrentAddress_District">District:</label>
+                        <input type="text" class="form-control" id="districtg" name="District">
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="PermanentAddress_DistanceInKm">Distance in Km:</label>
+                        <input type="text" class="form-control"  id="distanceinkmg" name="PermanentAddress_DistanceInKm">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="PermanentAddress_StateName">
+                    
+                        <div class="form-group">
+                            <label for="PermanentAddress_StateName">State:</label>
+                            <select  id="stateNameg" class="form-control" name="PermanentAddress_StateName">
+                                <option value="Select">Select</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                          
+                            </select>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="PinCode">Pin Code:</label>
+                        <input type="text" class="form-control" id="pinCodeg" name="PinCode">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 offset-sm-10">
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    <button type="submit" class="btn btn-primary"><b>Submit</b></button>
+                </div>
+            </div>
+        </form>
+            <form>
+                <h3>Upload Documents</h3>
+                <h5 style="color: red; text-align: center;">Note: Please upload an image file. Accepted formats: JPEG, PNG, GIF, BMP,jpg etc.</h5>
+                <div class="row">
+                       
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="coApplicantPhoto">Passport Photo:</label>
+                <div class="input-group">
+                    <input type="file" class="form-control-file" id="photog" accept=".jpg, .pdf" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary mt-2" type="button" onclick="uploadPhotog()">Upload</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="pancard">Pancard:</label>
+                <div class="input-group">
+                    <input type="file" class="form-control-file" id="pang" accept=".jpg, .pdf" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary mt-2" type="button" onclick="uploadPang()">Upload</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+    <div class="form-group">
+        <label for="Signature">Signature:</label>
+        <div class="form-group">
+            <input type="file" class="form-control-file" id="signatureg" accept=".jpg, .pdf" required>
+            <div class="input-group-append">
+                <button class="btn btn-primary mt-2" type="button" onclick="uploadsignatureg()">Upload</button>
+                </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+            <div class="row">
+
+                <h5 style="color: red; text-align: center;">Please upload any one of the following documents: Aadhar Card, Voted Id, or Driver's License.</h5>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="Photo">Aadhar card(front and back):</label>
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="aadharg" accept=".jpg, .pdf" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary mt-2" type="button" onclick="uploadadharg()">Upload</button>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="VoterID">Voter ID:</label>
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" id="voterg" accept=".jpg, .pdf" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary mt-2" type="button" onclick="uploadvoterg()">Upload</button>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="drivinglicense">Driving License:</label>
+                <div class="form-group">
+                    <input type="file" class="form-control-file" id="drivinglicenseg" accept=".jpg, .pdf" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary mt-2" type="button" onclick="uploaddrivingg()" >Upload</button>
+                        </div>
+                </div>
+        </div>
+        </div>
+
+            </div>
+    
+            <div class="row">
+                <div class="col   d-flex mt-3 mb-2 justify-content-center align-items-center ">
+                    <button class="btn btn-primary mt-2" type="button" onclick="handleNextg()">Next Page</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+        document.getElementById('gurantordetails').addEventListener('submit', handlesaveinfog);
+          
+            async function handlesaveinfog(event) {
+                event.preventDefault();  
+             console.log("function has called");
+                
+             const formDatag = {
+     name: document.getElementById('Nameg').value,
+     father: document.getElementById('Fatherg').value,
+     mother: document.getElementById('motherg').value,
+     dob: document.getElementById('dobg').value,
+     mob: document.getElementById('mobg').value,
+     age: document.getElementById('ageg').value,
+     gender: document.getElementById('Genderg').value,
+     maritalstatus: document.getElementById('MaritalStatusg').value,
+     permanentAddress: document.getElementById('permanentAddressg').value,
+     locailty: document.getElementById('localityg').value,
+     pinCode: document.getElementById('pinCodeg').value,
+     landmark: document.getElementById('Landmarkg').value,
+     city: document.getElementById('cityg').value,
+     district: document.getElementById('districtg').value,
+     distanceinkm: document.getElementById('distanceinkmg').value,
+     stateName: document.getElementById('stateNameg').value,
+     addresstype: document.getElementById('Addresstypeg').value,
+     applicantDetails1: {} 
+ };
+   
+                try {
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest');
+     if (!latestResponse.ok) {
+         throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+     }
+ 
+     const latestData = await latestResponse.json();
+     const id_applicant = latestData.id_applicant;
+ 
+     // Update applicantDetails1 with the fetched id_applicant
+     formDatag.applicantDetails1 = { id_applicant };
+                    const response = await fetch('http://localhost:8080/api/guarantordetails',{
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formDatag)
+                    });
+                    if (response.ok) {
+                        alert('Data saved successfully');
+                    
+                    } else {
+                        alert('Failed to save data: ' + response.statusText);
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+     
+            async function uploadPhotog() {
+                const photoInput = document.getElementById('photog');
+                const file = photoInput.files[0];
+     
+                if (!file) {
+                    alert('Please select a file to upload.');
+                    return;
+                }
+     
+                try {
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest-guarantor');
+            if (!latestResponse.ok) {
+             throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+            }
+ 
+         const latestData = await latestResponse.json();
+         const id_guar = latestData.id_guar;
+ 
+         // Create form data and append file and id_applicant
+         const formData = new FormData();
+         formData.append('file', file);
+         formData.append('guarantdetails1', id_guar);
+                    const response = await fetch('http://localhost:8080/api/guarapplicantphoto', {
+                        method: 'POST',
+                        body: formData
+                    });
+     
+                    if (response.ok) {
+                        alert('File uploaded successfully');
+                        console.log("File uploaded successfully");
+                    } else {
+                        alert('Failed to upload file: ' + response.statusText);
+                        console.log("Failed to upload file");
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+     
+            async function uploadPang() {
+                const photoInput = document.getElementById('pang');
+                const file = photoInput.files[0];
+     
+                if (!file) {
+                    alert('Please select a file to upload.');
+                    return;
+                }
+     
+                try {
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest-guarantor');
+            if (!latestResponse.ok) {
+             throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+            }
+ 
+         const latestData = await latestResponse.json();
+         const id_guar = latestData.id_guar;
+ 
+         // Create form data and append file and id_applicant
+         const formData = new FormData();
+         formData.append('file', file);
+         formData.append('guarantdetails1', id_guar);
+                    const response = await fetch('http://localhost:8080/api/guarapplicantpancard', {
+                        method: 'POST',
+                        body: formData
+                    });
+     
+                    if (response.ok) {
+                        alert('File uploaded successfully');
+                        console.log("File uploaded successfully");
+                    } else {
+                        alert('Failed to upload file: ' + response.statusText);
+                        console.log("Failed to upload file");
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+     
+     
+            async function uploadvoterg() {
+                const photoInput = document.getElementById('voterg');
+                const file = photoInput.files[0];
+     
+                if (!file) {
+                    alert('Please select a file to upload.');
+                    return;
+                }
+     
+     
+                try {
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest-guarantor');
+            if (!latestResponse.ok) {
+             throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+            }
+ 
+         const latestData = await latestResponse.json();
+         const id_guar = latestData.id_guar;
+ 
+         // Create form data and append file and id_applicant
+         const formData = new FormData();
+         formData.append('file', file);
+         formData.append('guarantdetails1', id_guar);
+                    const response = await fetch('http://localhost:8080/api/guarantorvoterid', {
+                        method: 'POST',
+                        body: formData
+                    });
+     
+                    if (response.ok) {
+                        alert('File uploaded successfully');
+                        console.log("File uploaded successfully");
+                    } else {
+                        alert('Failed to upload file: ' + response.statusText);
+                        console.log("Failed to upload file");
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+     
+     
+            async function uploadadharg() {
+                const photoInput = document.getElementById('aadharg');
+                const file = photoInput.files[0];
+     
+                if (!file) {
+                    alert('Please select a file to upload.');
+                    return;
+                }
+     
+                try {
+ 
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest-guarantor');
+            if (!latestResponse.ok) {
+             throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+            }
+ 
+         const latestData = await latestResponse.json();
+         const id_guar = latestData.id_guar;
+ 
+         // Create form data and append file and id_applicant
+         const formData = new FormData();
+         formData.append('file', file);
+         formData.append('guarantdetails1', id_guar);
+                    const response = await fetch('http://localhost:8080/api/guarantor/adharcard', {
+                        method: 'POST',
+                        body: formData
+                    });
+     
+                    if (response.ok) {
+                        alert('File uploaded successfully');
+                        console.log("File uploaded successfully");
+                    } else {
+                        alert('Failed to upload file: ' + response.statusText);
+                        console.log("Failed to upload file");
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+     
+     
+     
+     
+     
+            async function uploaddrivingg() {
+                const photoInput = document.getElementById('drivinglicenseg');
+                const file = photoInput.files[0];
+     
+                if (!file) {
+                    alert('Please select a file to upload.');
+                    return;
+                }
+     
+     
+                try {
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest-guarantor');
+            if (!latestResponse.ok) {
+             throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+            }
+ 
+         const latestData = await latestResponse.json();
+         const id_guar = latestData.id_guar;
+ 
+         // Create form data and append file and id_applicant
+         const formData = new FormData();
+         formData.append('file', file);
+         formData.append('guarantdetails1', id_guar);
+                    const response = await fetch('http://localhost:8080/api/GuarapplicantDl', {
+                        method: 'POST',
+                        body: formData
+                    });
+     
+                    if (response.ok) {
+                        alert('File uploaded successfully');
+                        console.log("File uploaded successfully");
+                    } else {
+                        alert('Failed to upload file: ' + response.statusText);
+                        console.log("Failed to upload file");
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+     
+     
+     
+     
+     
+            async function uploadsignatureg() {
+                const photoInput = document.getElementById('signatureg');
+                const file = photoInput.files[0];
+     
+                if (!file) {
+                    alert('Please select a file to upload.');
+                    return;
+                }
+     
+     
+                try {
+ 
+                 const latestResponse = await fetch('http://localhost:8080/api/latest-guarantor');
+            if (!latestResponse.ok) {
+             throw new Error('Failed to fetch latest applicant data: ' + latestResponse.statusText);
+            }
+ 
+         const latestData = await latestResponse.json();
+         const id_guar = latestData.id_guar;
+ 
+         // Create form data and append file and id_applicant
+         const formData = new FormData();
+         formData.append('file', file);
+         formData.append('guarantdetails1', id_guar);
+                    const response = await fetch('http://localhost:8080/api/GuarapplicantSign', {
+                        method: 'POST',
+                        body: formData
+                    });
+     
+                    if (response.ok) {
+                        alert('File uploaded successfully');
+                        console.log("File uploaded successfully");
+                    } else {
+                        alert('Failed to upload file: ' + response.statusText);
+                        console.log("Failed to upload file");
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+ 
+            function handleNextg() {
+     // Specify the URL of the next page
+     const nextPageUrl = "./Vehcile.html"; // Replace with the actual URL of the next page
+     
+     // Check the condition and navigate or show alert
+     // if (booleanValue === "true") {
+     //     window.location.href = nextPageUrl;
+     // } else {
+     //     alert('Please check and fill all of the above documents and entities.');
+     // }
+     window.location.href = nextPageUrl;
+     } 
+     </script>
+   
+</body>
+</html>

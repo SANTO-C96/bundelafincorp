@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Successful</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .success-container {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .success-icon {
+            font-size: 5rem;
+            color: green;
+        }
+        .summary-table {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .summary-table th,
+        .summary-table td {
+            padding: 15px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .success-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .emoji {
+            font-size: 3rem;
+            margin-right: 10px;
+        }
+        .lead {
+            font-size: 1.2rem;
+            color: #555;
+        }
+    </style>
+    <script>
+        // Function to call the API when the page loads
+        function callDefaultApi() {
+            fetch('http://localhost:8080/api/latest', {
+                method: 'GET', // or 'POST', 'PUT', etc. depending on your API
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Populate the table cells with data from the API
+                document.getElementById('applicantId').textContent = data.id_applicant;
+                document.getElementById('applicantName').textContent = data.name;
+                // document.getElementById('loanType').textContent = data.productType;
+                document.getElementById('applicationDate').textContent = data.createdAt;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+         
+        function callDefaultApi1() {
+            fetch('http://localhost:8080/api/latest2', {
+                method: 'GET', // or 'POST', 'PUT', etc. depending on your API
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Populate the table cells with data from the API
+                document.getElementById('loanType').textContent = data.productType;
+                // document.getElementById('applicationDate').textContent = data.applicationDate;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        // Attach the function to the window.onload event
+        window.onload = function() {
+            callDefaultApi();
+            callDefaultApi1();
+        };
+    </script>
+</head>
+<body>
+    <div class="container success-container">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="success-header">
+            <span class="emoji">🎉</span>
+            <span>Application Submitted Successfully!</span>
+            <span class="emoji">🎉</span>
+        </div>
+        <img src="./logoo.png" alt="">
+        <p class="lead mt-3">Thank you for applying. Your application has been successfully submitted and is under review.</p>
+        
+        <div class="summary-table">
+            <h3>📋 Application Summary</h3>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th scope="row">Application ID</th>
+                        <td id="applicantId">#123456</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Applicant Name</th>
+                        <td id="applicantName">John Doe</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Loan Type</th>
+                        <td id="loanType">Personal Loan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Application Date</th>
+                        <td id="applicationDate">May 29, 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="Applicantform.html" class="btn btn-primary mt-4">🏠 Return to Home</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
